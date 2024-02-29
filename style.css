@@ -1,0 +1,112 @@
+/* ## Colors
+
+### Primary
+
+- Green: hsl(75, 94%, 57%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background: hsl(0, 0%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 360px;
+  height: 600px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.container img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.info .lead__text {
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.info .sub__text {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.quote {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.social-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container .social-links {
+  width: 100%;
+  padding: 15px 30px;
+  color: #fff;
+  background: hsl(0, 0%, 20%);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.social-container .social-links:hover {
+  color: #000;
+  background-color: hsl(75, 94%, 57%);
+}
+/* @media(min-width ??) */
+
+::selection {
+  color: hsl(75, 94%, 57%);
+  background-color: #000;
+}
